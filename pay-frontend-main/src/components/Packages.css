@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+  }
+  
+  .main {
+    max-width: 75rem;
+    padding: 3m 1.5em;
+  }
+  
+  .main__heading {
+    font-weight: 600;
+    font-size: 2.25;
+    margin-bottom: 0.75;
+    text-align: center;
+    color: #eceff1;
+  }
+  
+  .cards {
+    position: relative;
+  }
+  
+  .cards__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+  }

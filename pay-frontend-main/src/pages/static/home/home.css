@@ -1,0 +1,22 @@
+/* styles.css */
+
+/* Small screens */
+@media (max-width: 640px) {
+  .responsiveHeight {
+    height: 260px;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .responsiveHeight {
+    height: 60px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .responsiveHeight {
+    height: 145px;
+  }
+}

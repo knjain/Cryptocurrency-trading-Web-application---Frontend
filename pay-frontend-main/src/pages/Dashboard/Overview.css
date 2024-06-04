@@ -1,0 +1,131 @@
+li::marker {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.skill {
+    width:180px;
+    height: 180px;
+    /* background-color: white; */
+    position: relative;
+}
+
+.outer{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #5068d2, #732595);
+}
+.inner{
+    height: 160px;
+    width: 160px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /* box-shadow:  ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.circleContainer {
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+.outerProgress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    padding: 9px;
+    border: 1px solid rgb(44, 43, 43);
+    border-radius: 50%;
+    background: conic-gradient(from 270deg, #12E55A, #18D4A7, rgb(44, 43, 43));
+    /* background: conic-gradient(from 270deg, #6d83e8, #853fa3, rgb(44, 43, 43)); */
+    animation: rotateCircle 10s linear infinite;
+}
+.storySeenCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    padding: 9px;
+    border: 1px solid rgb(44, 43, 43);
+    border-radius: 50%;
+    background: conic-gradient(from 270deg, #000, #4d4e4e, rgb(44, 43, 43));
+    /* background: conic-gradient(from 270deg, #6d83e8, #853fa3, rgb(44, 43, 43)); */
+    animation: rotateCircle 10s linear infinite;
+}
+
+.innerProgress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgb(44, 43, 43);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.circleImage {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-6px);
+    /* Offset for the 'top-6' */
+    width: 50px;
+    padding: 10px;
+}
+@keyframes slideBackground {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}@keyframes upDown {
+    0% {
+        background-position: center center, center center;
+    }
+
+    50% {
+        background-position: center top, center center;
+    }
+
+    100% {
+        background-position: center center, center center;
+    }
+}
+
+@keyframes leftRight {
+    0% {
+        background-position: left center, center center;
+    }
+
+    70% {
+        background-position: right center, center center;
+    }
+
+    100% {
+        background-position: left center, center center;
+    }
+}

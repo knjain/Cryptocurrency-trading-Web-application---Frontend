@@ -1,0 +1,31 @@
+/* styles.css */
+.custom-select {
+    /* Your custom styling here */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  /* Additional styles for the selected option */
+  .custom-select option:checked {
+    background-color: #007bff;
+    color: white;
+  }
+  
+.fill-color {
+  color: #b5b5bb;
+}
+.check-color{
+  color: green;
+}
+.success-color{
+  color: blue;
+}
+
+.error-color{
+  color: rgb(255, 31, 31);
+}
+

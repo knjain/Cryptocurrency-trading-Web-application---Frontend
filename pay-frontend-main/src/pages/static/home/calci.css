@@ -1,0 +1,33 @@
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Adjust this value to control the distance the images move up */
+    }
+}
+
+@keyframes moveDownUp {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+        /* Adjust this value to control the distance the images move down */
+    }
+}
+.moveUp {
+    animation: moveUpDown 2s infinite;
+    /* 1s duration for the animation, can be adjusted */
+}
+
+.moveDown {
+    animation: moveDownUp 2s infinite;
+}

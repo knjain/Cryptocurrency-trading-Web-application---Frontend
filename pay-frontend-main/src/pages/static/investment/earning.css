@@ -1,0 +1,27 @@
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-point {
+    animation: blinking 2s infinite;
+    margin-right: 10px;
+    /* Add some space between the point and the text */
+    display: inline-block;
+    /* So it stays in line with the text */
+}
+.blinking-point1 {
+    animation: blinking 4s infinite;
+    /* Add some space between the point and the text */
+    display: inline-block;
+    /* So it stays in line with the text */
+}

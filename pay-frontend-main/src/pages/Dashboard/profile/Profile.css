@@ -1,0 +1,8 @@
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #000000;
+  }
+  input:checked ~ .dot2 {
+    transform: translateX(100%);
+    background-color: #000000;
+  }
